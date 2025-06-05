@@ -1,0 +1,7 @@
+# romodels.txt provides a complete list of python packages used at any stage during this project
+# romodels.txt file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: linux-64
+# Typical install time is ~10 minutes 
+
+## README within the directory 'code' provides further instructions for running the code and the 'data' directory provides some demo data to play around with. 
