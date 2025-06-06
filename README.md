@@ -6,7 +6,6 @@ A note on dataloaders:
 Dataloaders expect the following data: 
 
 stimuli_all_subs.npy : A numpy array of dimensions (37,000 x 224 x 224 x 3) containing all 37,000 images for subjects in NSD with IDs 1,2,5,7: These subjects had full 3 repetitions for 10,000 images 
-Due to the big size of the file, it is not uploaded on github but can be downloaded using the following link: https://drive.google.com/drive/folders/1YJqLNFE1fwuHSIVGC_ZIxos87jUSNI8X?usp=sharing
 
 response_all_subs_roi_[roi_type]_val[roi_num].npy: A numpy array of dimensions 37,000 x num_voxels where num_voxels indicate the number of voxels in each ROI (roi_type indicates the type of roi, i.e. whether it is selective to faces, places, words or bodies. And roi_num indicates the ROI number used to localize the ROI in the floc experiment. 
 FFA (FFA1-2) has a label of [2,3] in floc for faces
@@ -20,8 +19,14 @@ neuralpredictors: https://github.com/sinzlab/neuralpredictors
 network dissection: https://github.com/davidbau/dissect
 
 ## Demo data 
-The data directory contains some demo data to play around with. It contains stimuli and corresponding FFA response (across all 4 subjects) for a subset of 100 stimuli from the test set. 
-The python notebook 'Demo training model.ipynb' provides demo code for training response optimized models 
+Demo data can be accessed from the following google drive link: https://drive.google.com/drive/folders/1Qu2pmoF3JguZJbDjOiHI9v_njAs1HERo?usp=sharing 
+You can download and put this data in the data directory to play around with the code. It contains stimuli and corresponding FFA response (across all 4 subjects) for a subset of 100 stimuli from the test set. 
+The python notebook 'Demo training model.ipynb' provides demo code for training response optimized models. 
+Demo data
+
+## Full data 
+Full preprocessed brain response data for the ROIs modeled in this study can be accessed using the following link: https://drive.google.com/file/d/1FcY252RMhdh0E4U7BblfLsk74v74rkUZ/view?usp=sharing 
+The directory also contains the COCO IDs corresponding to these brain responses. They can be downloaded from [MS COCO Home Page](https://cocodataset.org/#home) or via NSD. 
 
 #### Output after training models 
 All trained models will be saved in the saved_models directory by default
